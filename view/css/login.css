@@ -1,0 +1,104 @@
+@import url(../css/global.css);
+body{
+    font-family: var(--font-family);
+    background-image: url(../img/pollo-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+.danger{
+    width: 500px;
+    max-width: 400px;
+    height: 50px;
+    background-color: var(--color-segundario);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    transition: 0.5s;
+}
+.danger_hidden{
+    visibility: hidden;
+    transition: 2s;
+}
+aside{
+    width: 500px;
+    max-width: 400px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.729);
+    border-radius: 3px;
+}
+.mensaje{
+    width: 100%;
+    height:100%;
+    border: 3px;
+    color: white;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+}
+.contenedor_titulo_login{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titulo{
+    color: rgba(255, 0, 0, 0.692);
+}
+.label{
+    color:var(--color-terciario);
+}
+.entrada_texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.entrada_texto input[type=text],[type=password]{
+    border: none;
+    background: none;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.692);
+    outline: none;
+    width: 300px;
+}
+.entrada_texto .contraseña_olvida{
+    width: 100%;
+    text-align: center;
+}
+.entrada_texto .contraseña_olvida p a{
+    text-decoration: none;
+    color: var(--color-terciario);
+
+}
+.entrada_texto .btn_login{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.btn_login input[type=submit]{
+    background-color: var(--color-terciario);
+    color: white;
+    border: none;
+    font-weight: 700;
+    padding: 10px 30px 10px 30px;
+    width: 300px;
+    cursor: pointer;
+}
+.btn_login input[type=submit]:hover{
+    background:rgb(130, 128, 128);
+}

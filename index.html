@@ -5,122 +5,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilo.css">
-    <script type="text/javascript" src="js/javascript.js"></script>
+    <link rel="stylesheet" href="view/css/estilo.css">
+    <script type="text/javascript" src="view/js/javascript.js"></script>
     <title>El masabroso</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div>
-                <img src="imagenes/pngwing.com.png" class="logo">
+    <main>
+        <header>
+            <nav>
+                <div>
+                    <img src="view/img/logo.png" class="logo">
+                </div>
+                <input type="checkbox" id="check">
+                <label for="check" class="boton-menu">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <div class="menu">
+                    <ul class="nav-menu">
+                        <li><a href="#inicio">INICIO</a></li>
+                        <li><a href="#nosotros">NOSOTROS</a></li>
+                        <li><a  href="#menu">NUESTRO MENU</a></li>
+                        <li><a href="#domicilios">DOMICILIOS</a></li>
+                        <li><a class="btn_login" href="view/pages/login.html">LOGIN</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <article class="imagen cabecera" id="inicio">
+            <h1 class="titulo">Asadero mas sabroso</h1> 
+            <h2>Delicioso pollo asado para tu mesa</h2>
+            <button class="boton"><a href="#contactenos">CONTACTENOS</a></button>
+        </article>
+        <article class="nosotros" id="nosotros">
+            <img src="view/img/pollo-asado.jpg" alt="pollo asado">
+            <section class="box">
+                <h1>Quienes somos</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aut vitae sapiente aspernatur error eaque alias maiores id unde qui vel maxime, asperiores nam dignissimos, doloribus eveniet provident ex beatae!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sit aliquam beatae harum laboriosam animi doloribus reprehenderit natus iure illo enim, facere temporibus ullam asperiores porro rem cum ducimus quae.</p>
+            </section>
+        </article>
+        <article>
+            <section class="contenido">
+                <div class="text">
+                    <h1 id="menu">NUESTRO MENÚ</h1>
+                </div>
+                <div class="card" >
+                    <div class="card1">
+                        <img src="view/img/pollo-asado.jpg" alt="1 pollo" height="130px">
+                        <div class="caja">
+                            <h3>1 pollo asado</h3>
+                            <h4>$18.000</h4>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="view/img/pollo-asado2.jpg" alt="1 pollo"  height="130px">
+                        <div class="caja">
+                            <h3>1/2 de pollo asado</h3>
+                            <h4>$9.000</h4>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="https://barbecue.getagil.com/comercio-prod/69/productos/2578-cuartodepollo-600w.jpg" alt="1 pollo"  height="130px">
+                        <div class="caja">
+                            <h3>1/4 pollo asado</h3>
+                            <h4>$5.000</h4>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="https://cdn7.kiwilimon.com/recetaimagen/14227/1900x1080/6626.jpg.webp" alt="1 pollo"  height="130px">
+                        <div class="caja">
+                            <h3>porcion de ensalada</h3>
+                            <h4>$1.000</h4>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="https://milrecetas.net/wp-content/uploads/2017/08/platano-frito.jpg" alt="1 pollo"  height="130px">
+                        <div class="caja">
+                            <h3>porcion de maduro</h3>
+                            <h4>$1.000</h4>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="https://www.petdarling.com/wp-content/uploads/2014/07/los-gatos-pueden-comer-patatas.jpg" alt="1 pollo"  height="130px">
+                        <div class="caja">
+                            <h3>porcion de papá</h3>
+                            <h4>$1.000</h4>
+                        </div>
+                    </div>   
+                </div>
+            </section>
+        </article>      
+        <article class="domicilios" id="domicilios">
+            <section class="pedidos">
+                <h1 > Domicilios</h1>
+                <h3>estamos ubicados en el sur de neiva</h3>
+                <h3>tel. 0000000 </br> celular. 000000</h3>
+                <p>precio del domicilio en el sur $2.000</br>precio del domicilio lejos del sur $3.000 </p>
+            </section>
+        </article>
+        <map class="mapa">
+           <div class="mapa2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d813.2800258413685!2d-75.27037917086403!3d2.9073113392465757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x69f22852c5c643f4!2zMsKwNTQnMjYuMyJOIDc1wrAxNicxMS40Ilc!5e1!3m2!1ses!2sco!4v1640746397324!5m2!1ses!2sco" width="800" height="600" style="border: 0px;;" allowfullscreen="" loading="lazy" frameborder="9"></iframe>
+           </div>
+        </map>
+        <footer class="footer" >
+            <form class="contact" id="contactenos">
+                <h1 id="contactenos">contactenos</h1>
+                <input type="text" name="nombre" placeholder="nombre">
+                <input type="text" name="correo" placeholder="correo">
+                <input type="text" name="telefono" placeholder="telefono">
+                <textarea name="mensaje" placeholder="mensaje" ></textarea>
+                <button class="boton">ENVIAR</button>
+            </form>
+            <div class="footer2">
+                <h3>Developer</h3>
+                <h5>&copy;Juan Ninco</h5>
+                <h5>juanchoninco26@gmail.com</h5>
             </div>
-            <input type="checkbox" id="check">
-            <label for="check" class="boton-menu">
-                <i class="fas fa-bars"></i>
-            </label>
-            <div class="menu">
-                <ul class="nav-menu">
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#nosotros">NOSOTROS</a></li>
-                    <li><a  href="#menu">NUESTRO MENU</a></li>
-                    <li><a href="#domicilios">DOMICILIOS</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <article class="imagen cabecera" id="inicio">
-        <h1 class="titulo">Asadero mas sabroso</h1> 
-        <h2>Delicioso pollo asado para tu mesa</h2>
-        <button class="boton"><a href="#contactenos">CONTACTENOS</a></button>
-    </article>
-    <article class="nosotros" id="nosotros">
-        <img src="imagenes/pollo-asado.jpg" alt="pollo asado">
-        <section class="box">
-            <h1>Quienes somos</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aut vitae sapiente aspernatur error eaque alias maiores id unde qui vel maxime, asperiores nam dignissimos, doloribus eveniet provident ex beatae!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sit aliquam beatae harum laboriosam animi doloribus reprehenderit natus iure illo enim, facere temporibus ullam asperiores porro rem cum ducimus quae.</p>
-        </section>
-    </article>
-    <article>
-        <section class="contenido">
-            <div class="text">
-                <h1 id="menu">NUESTRO MENÚ</h1>
-            </div>
-            <div class="card" >
-                <div class="card1">
-                    <img src="imagenes/pollo-asado.jpg" alt="1 pollo" height="130px">
-                    <div class="caja">
-                        <h3>1 pollo asado</h3>
-                        <h4>$18.000</h4>
-                    </div>
-                </div>
-                <div class="card1">
-                    <img src="imagenes/pollo-asado2.jpg" alt="1 pollo"  height="130px">
-                    <div class="caja">
-                        <h3>1/2 de pollo asado</h3>
-                        <h4>$9.000</h4>
-                    </div>
-                </div>
-                <div class="card1">
-                    <img src="https://barbecue.getagil.com/comercio-prod/69/productos/2578-cuartodepollo-600w.jpg" alt="1 pollo"  height="130px">
-                    <div class="caja">
-                        <h3>1/4 pollo asado</h3>
-                        <h4>$5.000</h4>
-                    </div>
-                </div>
-                <div class="card1">
-                    <img src="https://cdn7.kiwilimon.com/recetaimagen/14227/1900x1080/6626.jpg.webp" alt="1 pollo"  height="130px">
-                    <div class="caja">
-                        <h3>porcion de ensalada</h3>
-                        <h4>$1.000</h4>
-                    </div>
-                </div>
-                <div class="card1">
-                    <img src="https://milrecetas.net/wp-content/uploads/2017/08/platano-frito.jpg" alt="1 pollo"  height="130px">
-                    <div class="caja">
-                        <h3>porcion de maduro</h3>
-                        <h4>$1.000</h4>
-                    </div>
-                </div>
-                <div class="card1">
-                    <img src="https://www.petdarling.com/wp-content/uploads/2014/07/los-gatos-pueden-comer-patatas.jpg" alt="1 pollo"  height="130px">
-                    <div class="caja">
-                        <h3>porcion de papá</h3>
-                        <h4>$1.000</h4>
-                    </div>
-                </div>   
-            </div>
-        </section>
-    </article>
-    
-    <article class="domicilios" id="domicilios">
-        <section class="pedidos">
-            <h1 > Domicilios</h1>
-            <h3>estamos ubicados en el sur de neiva</h3>
-            <h3>tel. 0000000 </br> celular. 000000</h3>
-            <p>precio del domicilio en el sur $2.000</br>precio del domicilio lejos del sur $3.000 </p>
-        </section>
-    </article>
-    <map class="mapa">
-       <div class="mapa2">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d813.2800258413685!2d-75.27037917086403!3d2.9073113392465757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x69f22852c5c643f4!2zMsKwNTQnMjYuMyJOIDc1wrAxNicxMS40Ilc!5e1!3m2!1ses!2sco!4v1640746397324!5m2!1ses!2sco" width="800" height="600" style="border: 0px;;" allowfullscreen="" loading="lazy" frameborder="9"></iframe>
-       </div>
-    </map>
-    <footer class="footer" >
-        <form class="contact" id="contactenos">
-            <h1 id="contactenos">contactenos</h1>
-            <input type="text" name="nombre" placeholder="nombre">
-            <input type="text" name="correo" placeholder="correo">
-            <input type="text" name="telefono" placeholder="telefono">
-            <textarea name="mensaje" placeholder="mensaje" ></textarea>
-            <button class="boton">ENVIAR</button>
-        </form>
-        <div class="footer2">
-            <h3>Developer</h3>
-            <h5>&copy;Juan Ninco</h5>
-            <h5>juanchoninco26@gmail.com</h5>
-        </div>
-    </footer>
+        </footer>
+    </main>
 </body>
 </html>

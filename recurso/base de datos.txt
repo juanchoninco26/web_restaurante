@@ -1,0 +1,25 @@
+create DATABASE asadero;
+CREATE TABLE Empleado(
+    idUsuario int primary key,
+    usuario varchar(50) unique,
+    primerNombre varchar(100),
+    segundoNombre varchar(100),
+    primerApellido varchar(100),
+    segundoApellido varchar(100),
+    contraseña varchar(300),
+    tipoUsuario int 
+);
+CREATE TABLE tipoUsuario(
+    id int primary key,
+    empladoTipo boolean
+);
+CREATE TABLE usuarios(
+    idUsuario int primary key,
+    usuario varchar(50),
+    primerNombre varchar(100),
+    segundoNombre varchar(100),
+    primerApellido varchar(100)
+    segundoApellido varchar(100),
+    contraseña varchar(300)
+);
+

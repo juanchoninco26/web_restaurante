@@ -1,0 +1,7 @@
+:root{
+    --color-primario:rgb(0, 0, 0);
+    --color-segundario:rgb(253, 2, 2);
+    --color-terciario:rgb(77, 75, 75);
+
+    --font-family:sans-serif;
+}
