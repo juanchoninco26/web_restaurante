@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,17 +13,55 @@
 
 <body>
     <main>
-
-        <?php include("../components/menu.php")?>
-        
+        <!-- video components: https://www.youtube.com/watch?v=DWrr8z3_buQ -->
+        <comp-menu class="component_menu"></comp-menu>
         <section>
+            <div class="btn_producto">
+                <a href="">Agrregar producto</a>
+            </div>
 
-        </section>
+            <table>
 
-        <section>
+                <thead>
+                    <tr>
+                        <th scope="col">Grupo</th>
+                        <th scope="col">Año de formación</th>
+                        <th scope="col">Número de álbumes</th>
+                        <th scope="col">Canción más conocida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Buzzcocks</th>
+                        <td>1976</td>
+                        <td>9</td>
+                        <td>Ever fallen in love (with someone you shouldn't've)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">The Clash</th>
+                        <td>1976</td>
+                        <td>6</td>
+                        <td>London Calling</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">The Stranglers</th>
+                        <td>1974</td>
+                        <td>17</td>
+                        <td>No More Heroes</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="2">Número total de álbumes</th>
+                        <td colspan="2">77</td>
+                    </tr>
+                </tfoot>
+            </table>
 
         </section>
     </main>
+    <script src="../components/menu.js"></script>
     <script src="../js/menu.js"></script>
 </body>
+
 </html>

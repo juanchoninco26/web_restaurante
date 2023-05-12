@@ -1,1 +1,53 @@
 @import url(../css/menu.css);
+@import url(../../view/css/global.css);
+main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background:var(--fondo-admin);
+}
+.btn_producto{
+    margin: 10px;
+}
+.btn_producto a{
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    background: var(--color-azul-claro);
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  thead th:nth-child(1) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+  th, td {
+    padding: 20px;
+  }
+tbody tr:nth-child(odd) {
+    background-color: var(--color-azul-claro);
+    
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: var(--fondo-admin);
+  }
+
